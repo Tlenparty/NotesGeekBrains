@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

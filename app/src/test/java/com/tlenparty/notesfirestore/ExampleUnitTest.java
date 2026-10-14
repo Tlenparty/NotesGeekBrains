@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains;
+package com.tlenparty.notesfirestore;
 
 import org.junit.Test;
 

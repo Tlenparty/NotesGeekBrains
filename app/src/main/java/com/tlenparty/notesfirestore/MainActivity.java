@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains;
+package com.tlenparty.notesfirestore;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.geekbrains.notesgeekbrains.ui.ListNotesFragment;
+import com.tlenparty.notesfirestore.ui.ListNotesFragment;
 
 public class MainActivity extends AppCompatActivity {
     /*

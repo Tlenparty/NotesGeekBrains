@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NotesGeekbrains</string>
+    <string name="app_name">NotesFirestore</string>
     <string name="title1">Зелёный лес</string>
     <string name="title2">Гора</string>
     <string name="title3">Водопад</string>

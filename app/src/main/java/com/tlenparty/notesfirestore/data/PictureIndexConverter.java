@@ -1,6 +1,6 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
-import com.geekbrains.notesgeekbrains.R;
+import com.tlenparty.notesfirestore.R;
 
 import java.util.Random;
 

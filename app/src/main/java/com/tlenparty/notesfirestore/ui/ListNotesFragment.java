@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.ui;
+package com.tlenparty.notesfirestore.ui;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.geekbrains.notesgeekbrains.R;
-import com.geekbrains.notesgeekbrains.data.CardSource;
-import com.geekbrains.notesgeekbrains.data.CardSourceFirebaseImpl;
-import com.geekbrains.notesgeekbrains.data.CardSourceResponse;
+import com.tlenparty.notesfirestore.R;
+import com.tlenparty.notesfirestore.data.CardSource;
+import com.tlenparty.notesfirestore.data.CardSourceFirebaseImpl;
+import com.tlenparty.notesfirestore.data.CardSourceResponse;
 
 public class ListNotesFragment extends Fragment {
 

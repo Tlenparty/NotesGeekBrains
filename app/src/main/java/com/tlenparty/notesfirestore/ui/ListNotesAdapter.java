@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.ui;
+package com.tlenparty.notesfirestore.ui;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-import com.geekbrains.notesgeekbrains.data.CardSource;
-import com.geekbrains.notesgeekbrains.R;
-import com.geekbrains.notesgeekbrains.data.CardData;
+import com.tlenparty.notesfirestore.data.CardSource;
+import com.tlenparty.notesfirestore.R;
+import com.tlenparty.notesfirestore.data.CardData;
 
 // Adapter - посредник между данными и ViewHolder (отображает данные)
 public class ListNotesAdapter extends RecyclerView.Adapter<ListNotesAdapter.ListNotesViewHolder> {

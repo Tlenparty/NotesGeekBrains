@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
 public interface CardSource {
     // Инициализация БД. CardSourceResponse из FireStore

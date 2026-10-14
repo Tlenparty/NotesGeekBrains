@@ -1,10 +1,10 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 
-import com.geekbrains.notesgeekbrains.R;
+import com.tlenparty.notesfirestore.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;

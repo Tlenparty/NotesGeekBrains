@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains;
+package com.tlenparty.notesfirestore;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

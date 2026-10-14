@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
 public interface CardSourceResponse {
     //Если успешно подсоеденимся к бд и возвращаем источник данных

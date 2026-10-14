@@ -1,4 +1,4 @@
-package com.geekbrains.notesgeekbrains.data;
+package com.tlenparty.notesfirestore.data;
 
 import com.google.android.material.datepicker.RangeDateSelector;
 import com.google.firebase.Timestamp;
