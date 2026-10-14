@@ -1,49 +1,49 @@
 # Notes Firestore
 
-Прототип Android-приложения для заметок-карточек на Java. Каждая карточка —
-картинка, заголовок, описание и отметка «нравится»; источник данных
-абстрагирован интерфейсом `CardSource` с двумя реализациями: локальной
-(из ресурсов) и облачной на Cloud Firestore.
+A prototype Android app in Java for note cards. Each card has an
+image, a title, a description, and a "like" flag; the data source is
+abstracted behind the `CardSource` interface with two implementations: a local one
+(from resources) and a cloud one backed by Cloud Firestore.
 
-> Статус: прототип. Экран списка и слой данных написаны, но приложение
-> не доведено до рабочего состояния: для Firestore нужен свой Firebase-проект,
-> а инициализация адаптера в `ListNotesFragment` требует доработки.
+> Status: prototype. The list screen and the data layer are written, but the app
+> is not in a working state: Firestore requires your own Firebase project,
+> and the adapter initialization in `ListNotesFragment` needs more work.
 
-## Возможности
+## Features
 
-- Список карточек в RecyclerView (CardView: изображение, заголовок, описание, чекбокс «нравится»)
-- Интерфейс источника данных `CardSource` с асинхронной инициализацией через `CardSourceResponse`
-- `CardSourceImplementation` — карточки из строковых и графических ресурсов
-- `CardSourceFirebaseImpl` — CRUD по коллекции `cards` в Firestore,
-  сортировка по дате, маппинг документов (`CardDataMapping`)
-- Сохранение картинки в документе по индексу (`PictureIndexConverter`)
+- A list of cards in a RecyclerView (CardView: image, title, description, "like" checkbox)
+- A `CardSource` data source interface with asynchronous initialization via `CardSourceResponse`
+- `CardSourceImplementation`: cards built from string and drawable resources
+- `CardSourceFirebaseImpl`: CRUD on the `cards` collection in Firestore,
+  sorting by date, and document mapping (`CardDataMapping`)
+- Storing the picture in a document by index (`PictureIndexConverter`)
 
-## Стек
+## Tech stack
 
-| Область    | Технологии                                    |
-|------------|-----------------------------------------------|
-| Язык       | Java 8                                        |
-| UI         | Fragments, RecyclerView, CardView, Material Components |
-| Данные     | Firebase Cloud Firestore                      |
-| Сборка     | Gradle 7.3.3, Android Gradle Plugin 7.0.4     |
+| Area     | Technologies                                  |
+|----------|-----------------------------------------------|
+| Language | Java 8                                        |
+| UI       | Fragments, RecyclerView, CardView, Material Components |
+| Data     | Firebase Cloud Firestore                      |
+| Build    | Gradle 7.3.3, Android Gradle Plugin 7.0.4     |
 
-## Структура
+## Project structure
 
 ```
 app/src/main/java/com/tlenparty/notesfirestore/
-├── MainActivity.java      # контейнер фрагментов
-├── Navigation.java        # переключение фрагментов
-├── data/                  # CardData, CardSource и его реализации, маппинг Firestore
+├── MainActivity.java      # fragment container
+├── Navigation.java        # fragment switching
+├── data/                  # CardData, CardSource and its implementations, Firestore mapping
 └── ui/                    # ListNotesFragment, ListNotesAdapter
 ```
 
-## Сборка
+## Build
 
-Требуется JDK 11–17 и Android SDK 30.
+Requires JDK 11–17 and Android SDK 30.
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-Для работы с Firestore подключите свой Firebase-проект: положите
-`google-services.json` в `app/` и примените плагин `com.google.gms.google-services`.
+To use Firestore, connect your own Firebase project: put
+`google-services.json` in `app/` and apply the `com.google.gms.google-services` plugin.
